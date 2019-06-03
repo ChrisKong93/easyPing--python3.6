@@ -84,6 +84,7 @@ class EasyPing(QtWidgets.QWidget):
             ip：为对于的IP地址
         '''
         index = int(ip.split('.')[3])
+        print(result)
         if result:
             self.ui.label_list[index].setStyleSheet("background-color: rgb(85, 170, 127);") # 设置背景为绿色
         else:
